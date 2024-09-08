@@ -142,7 +142,7 @@
                 responses: [
                     { text: 'Close the ticket', correct: false, incorrectFeedback: 'Incorrect! Given they were allegedly scammed in-game, you should redirect them to Adopt Me Support or #adop-me-help to report the user. This can be done using the "/tag support - gen" command, or through a hand-written message.', nextStage: 5 },
                     { text: 'Transfer the ticket to another moderator', correct: false, incorrectFeedback: 'This is a perfectly fine option! If you are feeling overwhelmed or are unsure what to do. You can ask for help or for someone else to take over your ticket in #ticket-discussion!', nextStage: 5 },
-                    { text: 'Redirect them to support', correct: true, feedback: 'Correct! Seeing as they were allegedly scammed in-game, they are able to report the user to Uplift staff!', nextStage: 5 }
+                    { text: 'Redirect them to support', correct: true, feedback: 'Correct! Seeing as they were allegedly scammed in-game, they are able to report the user to Uplift staff!', nextStage: 6 }
                 ]
             },
             {
@@ -154,11 +154,11 @@
                 ]
             },
             {
-                prompt: 'Upon reviewing, the evidence is confirmed solid. What is the final step?',
+                prompt: 'While we are able to take action within the discord, we are unable to assist with this in-gamw as we are only Discord volunteers; please head on over to https://www.playadopt.me/support, where the Support Team can help you.',
                 responses: [
-                    { text: 'Keep the ban in place and close the ticket', correct: true, nextStage: null },
-                    { text: 'Reduce the ban to a warning', correct: false, incorrectFeedback: 'The severity of the violation justifies a ban, reducing it is not appropriate.', nextStage: null },
-                    { text: 'Escalate to higher authorities for review', correct: false, incorrectFeedback: 'You have already reviewed the evidence, there is no need to escalate.', nextStage: null }
+                    { text: 'Explain to the user how cross trading is not permitted (Verbal warning)', correct: true, feedback: 'Correct. If someone admits to illegal trading while reporting someone else, instead of moderating them through Dyno, we give them a verbal warning. This is to not deter people from creating reports if they know they might get banned.', nextStage: 5 },
+                    { text: 'Close the ticket', correct: false, incorrectFeedback: 'Do not close a ticket without a valid reason.', nextStage: null },
+                    { text: 'Moderate the user who made the ticket for cross trading', correct: false, incorrectFeedback: 'If someone admits to illegal trading while reporting someone else, a verbal warning is issued.', nextStage: null }
                 ]
             }
         ];
