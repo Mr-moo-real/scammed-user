@@ -118,7 +118,7 @@
                 responses: [
                     { text: 'Close the ticket.', correct: false, incorrectFeedback: 'You should not close a ticket unless you have a valid reason to do so.', nextStage: 2 },
                     { text: 'Tell them that nothing can be done.', correct: false, incorrectFeedback: 'You should not tell them that nothing can be done. While they wont be able to get their pets back, they can still take action on the user who scammed them.', nextStage: 2 },
-                    { text: 'ask for clarification on whether or not this happened in-game or in discord', correct: true, feedback: 'Correct! This will allow you to know if you need to moderate anyone in the server.', nextStage: 2 }
+                    { text: 'Ask for clarification on whether or not this happened in-game or in discord', correct: true, feedback: 'Correct! This will allow you to know if you need to moderate anyone in the server.', nextStage: 2 }
                 ]
             },
             {
@@ -146,7 +146,7 @@
                 ]
             },
             {
-                prompt: '"While we are able to take action within the discord, we are unable to assist with this in-gamw as we are only Discord volunteers; please head on over to https://www.playadopt.me/support, where the Support Team can help you."',
+                prompt: '""',
                 responses: [
                     { text: 'Close the ticket', correct: false, incorrectFeedback: 'Incorrect! There is crucial information that the user has to read in order to get all of the appropriate information they need, and closing the ticket may mean they do not read it.', nextStage: 7 },
                     { text: 'Leave the ticket open', correct: false, incorrectFeedback: 'You should not leave a ticket open, as we dont want the queue to be filled up with completed tickets that simply havent been closed.', nextStage: 7 },
@@ -154,9 +154,9 @@
                 ]
             },
             {
-                prompt: 'While we are able to take action within the discord, we are unable to assist with this in-gamw as we are only Discord volunteers; please head on over to https://www.playadopt.me/support, where the Support Team can help you.',
+                prompt: '"While we are able to take action within the discord, we are unable to assist with this in-game as we are only Discord volunteers; please head on over to https://www.playadopt.me/support, where the Support Team can help you. (You can use /tag support-gen)"',
                 responses: [
-                    { text: 'Explain to the user how cross trading is not permitted (Verbal warning)', correct: true, feedback: 'Correct. If someone admits to illegal trading while reporting someone else, instead of moderating them through Dyno, we give them a verbal warning. This is to not deter people from creating reports if they know they might get banned.', nextStage: 5 },
+                    { text: 'Explain to the user how cross-trading is not permitted (Verbal warning)', correct: true, feedback: 'Correct. If someone admits to illegal trading while reporting someone else, instead of moderating them through Dyno, we give them a verbal warning. This is to not deter people from creating reports if they know they might get banned.', nextStage: 5 },
                     { text: 'Close the ticket', correct: false, incorrectFeedback: 'Do not close a ticket without a valid reason.', nextStage: null },
                     { text: 'Moderate the user who made the ticket for cross trading', correct: false, incorrectFeedback: 'If someone admits to illegal trading while reporting someone else, a verbal warning is issued.', nextStage: null }
                 ]
